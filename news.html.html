@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Новости — Детский сад «Колокольчик»</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="tag"><span class="dot"></span> Новости и объявления</div>
+      <div class="tag">Архив · Подписка</div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+        <div class="emblem">КС</div>
+        <div class="title">
+          <b>МБДОУ «Детский сад «Колокольчик»</b>
+          <span>г. Буйнакск · Республика Дагестан</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="svedeniya.html">Сведения</a>
+        <a class="active" href="news.html">Новости</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Главная</a> → <span>Новости</span>
+    </div>
+
+    <div class="card pad">
+      <h1 class="h1" style="margin-bottom:6px;">Новости детского сада «Колокольчик»</h1>
+      <p class="p" style="margin-bottom:0;">Актуальные события, объявления и мероприятия.</p>
+    </div>
+
+    <div style="height:14px"></div>
+
+    <div class="list">
+      <div class="card pad">
+        <b>План мероприятий на февраль</b>
+        <div class="meta" style="margin-top:6px;">Дата публикации: <span id="n1"></span></div>
+        <p class="p" style="margin-top:10px;">Опубликован план тематических занятий, праздников и спортивных мероприятий. В этом месяце запланированы: утренник ко Дню защитника Отечества, выставка детских рисунков, открытые занятия.</p>
+      </div>
+
+      <div class="card pad">
+        <b>Родительское собрание</b>
+        <div class="meta" style="margin-top:6px;">Дата публикации: <span id="n2"></span></div>
+        <p class="p" style="margin-top:10px;">Собрание состоится 20 февраля в 17:30 в актовом зале. Повестка: безопасность детей, итоги адаптации в ясельных группах, организация питания.</p>
+      </div>
+
+      <div class="card pad">
+        <b>Конкурс «Зимняя сказка»</b>
+        <div class="meta" style="margin-top:6px;">Дата публикации: <span id="n3"></span></div>
+        <p class="p" style="margin-top:10px;">Подведены итоги конкурса поделок. Все участники получат грамоты, победители – памятные призы.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> МБДОУ «Детский сад «Колокольчик». Новости (учебный макет).
+    </div>
+  </footer>
+
+  <script>
+    const now = new Date();
+    const ru = (d)=>d.toLocaleDateString('ru-RU',{year:'numeric',month:'long',day:'numeric'});
+    const d1 = new Date(now); d1.setDate(now.getDate()-3);
+    const d2 = new Date(now); d2.setDate(now.getDate()-10);
+    const d3 = new Date(now); d3.setDate(now.getDate()-18);
+    document.getElementById('n1').textContent = ru(d1);
+    document.getElementById('n2').textContent = ru(d2);
+    document.getElementById('n3').textContent = ru(d3);
+    document.getElementById('year').textContent = now.getFullYear();
+  </script>
+</body>
+</html>

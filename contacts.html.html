@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты — Детский сад «Колокольчик»</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="tag"><span class="dot"></span> Контактная информация</div>
+      <div class="tag">Обращения граждан · Режим работы</div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+        <div class="emblem">КС</div>
+        <div class="title">
+          <b>МБДОУ «Детский сад «Колокольчик»</b>
+          <span>г. Буйнакск · Республика Дагестан</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="svedeniya.html">Сведения</a>
+        <a href="news.html">Новости</a>
+        <a class="active" href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Главная</a> → <span>Контакты</span>
+    </div>
+
+    <div class="hero-grid" style="padding-bottom:34px;">
+      <div class="card pad">
+        <h1 class="h1" style="margin-bottom:6px;">Контакты</h1>
+        <p class="p">Адрес, телефоны, электронная почта, режим работы.</p>
+
+        <div class="kv" style="grid-template-columns:1fr 1fr;gap:12px">
+          <div class="item">
+            <b>Адрес</b>
+            <span style="color:var(--muted);font-size:13px;">г. Буйнакск, жилмассив Западный, 3/1</span>
+          </div>
+          <div class="item">
+            <b>Телефон</b>
+            <span style="color:var(--muted);font-size:13px;">+7 (87237) 5-12-34</span>
+          </div>
+          <div class="item">
+            <b>Email</b>
+            <span style="color:var(--muted);font-size:13px;">kolokolchik.buynaksk@mail.ru</span>
+          </div>
+          <div class="item">
+            <b>Режим работы</b>
+            <span style="color:var(--muted);font-size:13px;">Пн–Пт: 07:30–18:00</span>
+          </div>
+        </div>
+
+        <div style="height:12px"></div>
+        <a class="btn primary" href="index.html">На главную</a>
+      </div>
+
+      <div class="card pad">
+        <h2 style="margin:0 0 10px;font-size:16px;">Схема проезда</h2>
+        <p class="p" style="margin:0 0 10px;">Ориентиры: жилмассив Западный, остановка «Магазин №5», вход с торца здания.</p>
+        <div style="border:1px dashed var(--border);border-radius:16px;padding:14px;color:var(--muted);background:#fbfdff;">
+          <ul style="margin:10px 0 0;padding-left:18px;line-height:1.7;">
+            <li>Остановка: «Жилмассив Западный»</li>
+            <li>Ориентир: продуктовый магазин «Народный»</li>
+            <li>Вход со стороны детской площадки</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> МБДОУ «Детский сад «Колокольчик». Контакты (учебный макет).
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

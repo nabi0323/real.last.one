@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Детский сад «Колокольчик» — Официальный сайт</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="tag"><span class="dot"></span> Портал образовательной организации (учебный макет для практики)</div>
+      <div class="tag">Версия для слабовидящих · Поиск</div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+        <div class="emblem">КС</div>
+        <div class="title">
+          <b>МБДОУ «Детский сад «Колокольчик»</b>
+          <span>г. Буйнакск · Республика Дагестан</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="active" href="index.html">Главная</a>
+        <a href="svedeniya.html">Сведения об организации</a>
+        <a href="news.html">Новости</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="card pad">
+          <h1 class="h1">Официальный сайт детского сада «Колокольчик»</h1>
+          <p class="p">
+            Добро пожаловать на сайт МБДОУ «Детский сад «Колокольчик». Здесь размещены сведения об образовательной организации,
+            документы, новости и контактная информация.
+          </p>
+
+          <div class="badges">
+            <span class="badge">Документы</span>
+            <span class="badge">Образовательные программы</span>
+            <span class="badge">Новости</span>
+            <span class="badge">Контакты</span>
+          </div>
+
+          <div class="btns">
+            <a class="btn primary" href="svedeniya.html">Перейти к сведениям</a>
+            <a class="btn" href="contacts.html">Как нас найти</a>
+          </div>
+
+          <p class="p" style="margin-top:12px;font-size:13px;">
+            <b>Важно:</b> данный сайт создан как учебный проект для производственной практики.
+          </p>
+        </div>
+
+        <aside class="card pad">
+          <h2 style="margin:0 0 10px;font-size:16px;">Краткая информация</h2>
+          <div class="kv">
+            <div class="item">
+              <b>Режим работы</b>
+              <span style="color:var(--muted);font-size:13px;">Пн–Пт: 07:30 – 18:00</span>
+            </div>
+            <div class="item">
+              <b>Адрес</b>
+              <span style="color:var(--muted);font-size:13px;">г. Буйнакск, жилмассив Западный, 3/1</span>
+            </div>
+            <div class="item">
+              <b>Телефон</b>
+              <span style="color:var(--muted);font-size:13px;">+7 (87237) 5-12-34</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Разделы</h2>
+        <div class="grid">
+          <div class="card tile">
+            <h3 style="margin:0 0 8px;">Сведения об организации</h3>
+            <div class="p" style="margin:0;">Структура, документы, образовательные стандарты, платные услуги.</div>
+            <div class="meta">Обновлено: <span id="upd1"></span></div>
+            <div class="btns" style="margin-top:10px;">
+              <a class="btn primary" href="svedeniya.html">Открыть</a>
+            </div>
+          </div>
+
+          <div class="card tile">
+            <h3 style="margin:0 0 8px;">Новости</h3>
+            <div class="p" style="margin:0;">Мероприятия, объявления, результаты конкурсов.</div>
+            <div class="meta">Публикации: <span id="upd2"></span></div>
+            <div class="btns" style="margin-top:10px;">
+              <a class="btn" href="news.html">Открыть</a>
+            </div>
+          </div>
+
+          <div class="card tile">
+            <h3 style="margin:0 0 8px;">Контакты</h3>
+            <div class="p" style="margin:0;">Телефон, электронная почта, схема проезда.</div>
+            <div class="meta">Прием обращений граждан</div>
+            <div class="btns" style="margin-top:10px;">
+              <a class="btn" href="contacts.html">Открыть</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <h2>Последние новости</h2>
+        <div class="list">
+          <a class="itemlink" href="news.html">
+            <div class="ic">N</div>
+            <div>
+              <b>План мероприятий на февраль</b>
+              <div class="p" style="margin:4px 0 0;">Опубликован план тематических занятий и праздников.</div>
+              <div class="meta">Дата: <span id="d1"></span></div>
+            </div>
+          </a>
+
+          <a class="itemlink" href="news.html">
+            <div class="ic">N</div>
+            <div>
+              <b>Родительское собрание</b>
+              <div class="p" style="margin:4px 0 0;">Информация о времени и повестке собрания.</div>
+              <div class="meta">Дата: <span id="d2"></span></div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> МБДОУ «Детский сад «Колокольчик». Учебный макет сайта (для практики).
+    </div>
+  </footer>
+
+  <script>
+    const now = new Date();
+    const ru = (d)=>d.toLocaleDateString('ru-RU',{year:'numeric',month:'long',day:'numeric'});
+    document.getElementById('year').textContent = now.getFullYear();
+    document.getElementById('upd1').textContent = ru(now);
+    document.getElementById('upd2').textContent = ru(now);
+    const d1 = new Date(now); d1.setDate(now.getDate()-3);
+    const d2 = new Date(now); d2.setDate(now.getDate()-10);
+    document.getElementById('d1').textContent = ru(d1);
+    document.getElementById('d2').textContent = ru(d2);
+  </script>
+</body>
+</html>

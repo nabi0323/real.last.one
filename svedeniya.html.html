@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сведения об организации — Детский сад «Колокольчик»</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="tag"><span class="dot"></span> Сведения об образовательной организации</div>
+      <div class="tag">Поиск · Документы</div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+        <div class="emblem">КС</div>
+        <div class="title">
+          <b>МБДОУ «Детский сад «Колокольчик»</b>
+          <span>г. Буйнакск · Республика Дагестан</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a class="active" href="svedeniya.html">Сведения</a>
+        <a href="news.html">Новости</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Главная</a> → <span>Сведения об образовательной организации</span>
+    </div>
+
+    <div class="card pad">
+      <h1 class="h1" style="margin-bottom:6px;">Сведения об образовательной организации</h1>
+      <p class="p" style="margin-bottom:0;">
+        В разделе размещены основные сведения: структура и органы управления, документы, образовательные стандарты,
+        руководство и педагогический состав, материально‑техническое обеспечение и финансово‑хозяйственная деятельность.
+      </p>
+    </div>
+
+    <div style="height:14px"></div>
+
+    <section class="section" style="padding-top:0;">
+      <h2>Навигация по подразделам</h2>
+      <div class="grid">
+        <div class="card tile">
+          <h3 style="margin:0 0 8px;">Структура и органы управления</h3>
+          <div class="p" style="margin:0;">Схема управления, должности, порядок принятия решений.</div>
+          <div class="meta">Файл: struktura.pdf (пример)</div>
+        </div>
+
+        <div class="card tile">
+          <h3 style="margin:0 0 8px;">Документы</h3>
+          <div class="p" style="margin:0;">Устав, лицензия, локальные акты, правила приема.</div>
+          <div class="meta">Файлы: pdf/docx</div>
+        </div>
+
+        <div class="card tile">
+          <h3 style="margin:0 0 8px;">Образование</h3>
+          <div class="p" style="margin:0;">Программы, учебный план, календарный график.</div>
+          <div class="meta">Раздел: образовательная деятельность</div>
+        </div>
+      </div>
+
+      <div style="height:14px"></div>
+
+      <h2>Основные сведения</h2>
+      <div class="card pad">
+        <div class="kv" style="grid-template-columns:1fr 1fr;gap:12px">
+          <div class="item">
+            <b>Полное наименование</b>
+            <span style="color:var(--muted);font-size:13px;">Муниципальное бюджетное дошкольное образовательное учреждение «Детский сад «Колокольчик»</span>
+          </div>
+          <div class="item">
+            <b>Сокращенное наименование</b>
+            <span style="color:var(--muted);font-size:13px;">МБДОУ «Колокольчик»</span>
+          </div>
+          <div class="item">
+            <b>Учредитель</b>
+            <span style="color:var(--muted);font-size:13px;">Администрация муниципального образования «Город Буйнакск»</span>
+          </div>
+          <div class="item">
+            <b>Контакты</b>
+            <span style="color:var(--muted);font-size:13px;">Тел.: +7 (87237) 5-12-34 · Email: kolokolchik.buynaksk@mail.ru</span>
+          </div>
+        </div>
+
+        <div style="height:10px"></div>
+        <p class="p" style="margin:0;">
+          <b>Адрес:</b> г. Буйнакск, жилмассив Западный, 3/1<br>
+          <b>Режим работы:</b> Пн–Пт: 07:30 – 18:00
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> МБДОУ «Детский сад «Колокольчик». Раздел «Сведения» (учебный макет).
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
